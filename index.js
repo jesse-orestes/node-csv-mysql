@@ -1,13 +1,7 @@
-const express = require('express');
-const app = express();
+
+const App = require('./server');
 const port = 3000;
 
-// app.use(express.urlencoded({extended: false}));
-
-app.get('/', (req, res) => {
-    res.send('Hello Word!');
-})
-
-app.listen(port, () => {
+App.listen(port, () => {
 console.log(`Example app listening at http://localhost:${port}`);
 })
